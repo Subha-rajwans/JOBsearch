@@ -1,0 +1,32 @@
+li{
+    float:right;
+}
+li a {
+display: block;
+padding: 8px 8px;
+border-right:2px solid white ;
+color:white;
+text-align: center;
+background-color:limegreen;
+}
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color:white;
+
+}
+.content{
+padding:10px 10px 10px 10px;
+background-color: #e6ffff;
+text-align: center;
+font-size: 20px;
+padding-bottom: 15%;
+}
+ .menu{
+
+}
+.results{
+padding-bottom: 15%
+}

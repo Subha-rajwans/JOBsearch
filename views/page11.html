@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>LineupX</title>
+		  <link rel="stylesheet" href="commonstyle.css">
+		  <link rel="stylesheet" href="styles.css">
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		  <style>
+			input[type=text] {
+				width: 130px;
+				box-sizing: border-box;
+				border: 2px solid #ccc;
+				border-radius: 4px;
+				font-size: 12px;
+				background-color: #black ;
+				/*background-image: url('searchicon.jpg');*/
+				/*background-position: 10px 10px; */
+				background-repeat: no-repeat;
+				padding: 2px 20px 2px 2px;
+				transition: width 0.4s ease-in-out;
+			}
+
+			input[type=text]:focus {
+				width: 100%;
+			}
+			
+		  </style>
+	</head>
+	<body onload="getStoredProducts()">
+		<div class="nav-wapper">
+				
+			<div class="left-side">  
+				<div class="brand">
+					<a href="/listproducts">LineupX</a>
+				</div>
+			</div>
+
+			<div class="right-side">
+				
+				<div class="nav-link-wapper">
+					<a href="/page11" id="aAddProduct">Add new job</a>
+				</div>
+				
+				<div class="nav-link-wapper active-nav-link">
+					<a href="/register" id="aRegister">Register</a>
+				</div>
+				<div class="nav-link-wapper">
+					<a href="/login" id="aLogin">Login</a>
+				</div>
+				<div class="nav-link-wapper">
+					<a href="#" id="aLogout" onclick="userLogout()">Logout</a>
+				</div>
+				<div class="nav-link-wapper">
+					<a id="txtWelcome"></a>
+				</div>
+				<div class="nav-link-wapper">
+					<a id="txtWelcome"></a>
+				</div>
+
+			</div>
+
+		</div>
+<!--_____________________________________________________________________________________________________________-->		
+	<div style="color: #black;padding: 10;padding-left: 100;">
+		<button id = "aAddNewProduct">Add a new job</button>
+		<div id = "divAddProduct">
+		</div>
+		<div style="padding-left:100">
+			<h2><b> List of job</b></h2>
+		</div>
+		<div id="divnextprev1"></div>
+		<div id = "divListProducts" style="padding:15px">
+		</div>
+		<br>
+		<div style="text-align: center;">
+						<div id="divnextprev"> </div>
+					</div>
+</div>	
+
+	</body>
+	<script src="script11.js" type="text/javascript"></script>
+	</html>

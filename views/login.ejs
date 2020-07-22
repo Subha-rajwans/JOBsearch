@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="commonstyle.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href=loginstyle.css>
+</head>
+
+<body>
+    <div class="nav-wapper">
+
+        <div class="left-side">
+            <div class="brand">
+                <a href="/listproducts">LineupX</a>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <div class="nav-link-wapper active-nav-link">
+                <a href="register.html">Register</a>
+            </div>
+            <div class="nav-link-wapper">
+                <a id="txtWelcome"></a>
+            </div>
+
+
+        </div>
+
+    </div>
+    <!---____________________________________________________________________________________________________________-->
+
+
+            <h2><b>Login</b></h2>
+        <div id='divloginform'>
+            <div class="fcontainer">
+                <form id="formlogin">
+                    <label style="color: #black;"><b>Username</b></label>
+                    <input type="text" id="inputUsername"  style="background-color: #eee;" placeholder="Enter Username" required>
+                    <br><br>
+                    <label style="color: #black;"><b>Password</b></label>
+                    <input type="password" id="inputPassword" style="background-color: #eee;" placeholder="Enter Password" required>
+                    <br><br>
+                    <input type="button" value="Login" onclick="validate()" style="display: inline-block;border-radius: 4px;background-color: #eee ;border: none;color: black ;text-align: center;padding: 5px;height: 25px;width: 100px;transition: all 0.5s;cursor: pointer;margin: 5px;">
+                    <p id="errormessage"></p>
+                </form>
+            </div>
+        </div>
+        <div id="newuser"></div>
+        <div id="divgotoregister">
+            <a id="gotoregister" href="/register" style="text-decoration: underline; color: #black;padding-left: 80;"> or Register</a></div>
+
+
+   
+
+
+</body>
+<script src="login.js" type="text/javascript"></script>
+
+</html>

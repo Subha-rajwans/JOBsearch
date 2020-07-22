@@ -1,0 +1,66 @@
+<html>
+<head><title>Register</title>
+  <link rel="stylesheet" href="commonstyle.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href=loginstyle.css>
+</head>
+<body>
+  <div class="nav-wapper">
+				
+    <div class="left-side">  
+      <div class="brand">
+        <a href="/listproducts">LineupX</a>
+      </div>
+    </div>
+
+    <div class="right-side">
+      
+      <div class="nav-link-wapper">
+        <a href="/page11" id="aAddProduct">Add Job</a>
+      </div>
+
+      <div class="nav-link-wapper ">
+        <a href="/login" id="aRegister">Login/Sign up</a>
+      </div>
+      <div class="nav-link-wapper ">
+        <a href="#" id="aLogout" onclick="userLogout()">Logout</a>
+      </div>
+      <div class="nav-link-wapper active-nav-link">
+        <a id="txtWelcome"></a>
+      </div>
+
+    </div>
+
+  </div>
+  <!--______________________________________________________________________________________________________________-->
+ 
+  <div class="img-background1" style="background-image:url(45.jpg);height:700px">
+  <div style="color: #black;padding: 10;padding-left: 200;">
+    <h2><b>Register</b></h2>
+    </div>
+    <div id='divregisterform'>
+      <div class="fcontainer" style="color: #black;">
+        <label>Name</label>
+        <input type="text" id="inputName" name="name" style="background-color: #eee;" placeholder="Enter Name" required>
+        <br>
+        <label>Username</label>
+        <input type="text" id="inputUsername" name="username" style="background-color: #eee;" placeholder="Enter Username" required>
+        <br>
+        <label>Password</label>
+        <input type="password" id="inputPassword" name="password" style="background-color: #eee;"  placeholder="Enter Password" required onkeyup="checkpassword()">
+        <br>
+        <label>Retype Password</label>
+        <input type="password" id="inputRePassword" name="password1" style="background-color: #eee;" placeholder="Retype Password" required onkeyup="checkpassword()">
+        <br>
+        <p id="mismatcherror"></p>
+        <p id="usernametaken"></p>
+        <button id="btnregister" onclick="checkUsername()" style="display: inline-block;border-radius: 4px;background-color: #eee ;border: none;color: black ;text-align: center;padding: 5px;height: 25px;width: 100px;transition: all 0.5s;cursor: pointer;margin: 5px;">Register</button>
+      </div>
+      </div>
+   </div>   
+
+
+
+  </body>
+  	<script src="register.js" type="text/javascript"></script>
+  </html>

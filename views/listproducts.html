@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<title>Jobs Available</title>
+		  <link rel="stylesheet" href="commonstyle.css">
+		  <link rel="stylesheet" href="styles.css">
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		  <style>
+			input[type=text] {
+				width: 130px;
+				box-sizing: border-box;
+				border: 2px solid #ccc;
+				border-radius: 4px;
+				font-size: 12px;
+				background-color: #black ;
+				/*background-image: url('searchicon.jpg');*/
+				/*background-position: 10px 10px; */
+				background-repeat: no-repeat;
+				padding: 2px 20px 2px 2px;
+				transition: width 0.4s ease-in-out;
+			}
+
+			input[type=text]:focus {
+				width: 100%;
+			}
+		  </style>
+	</head>
+	<body onload="getStoredProducts()">
+			<div class="nav-wapper">
+				
+				<div class="left-side">  
+					<div class="brand">
+						<a href="/listproducts">LineupX</a>
+					</div>
+				</div>
+	
+				<div class="right-side">
+					<div class="nav-link-wapper">
+						<a href="/wishlist">Applied jobs</a>
+					</div>
+					
+					<div class="nav-link-wapper">
+						<a href="/page11" id="aAddProduct">Add new jobs</a>
+					</div>
+					
+					<div class="nav-link-wapper ">
+						<a href="/login" id="aRegister">Login/Sign up</a>
+					</div>
+					<div class="nav-link-wapper ">
+						<a href="#" id="aLogout" onclick="userLogout()">Logout</a>
+					</div>
+					<div class="nav-link-wapper active-nav-link">
+						<a id="txtWelcome"></a>
+					</div>
+
+				</div>
+	
+			</div>
+
+<!--____________________________________________________________________________________________________-->
+
+
+
+
+	<!--<div id="divuser">
+		<p id="puser"></p>
+	</div>-->
+
+
+		<div class="items-wrapper">
+
+			<div class="item-wapper" >
+			</div>
+
+			<div class="item-wapper">
+				<div class="img-background2" style="background-image: url(2.jpg);">
+					<div style="text-align: center;padding: 10; color: #black;font-weight: 300;font-size: 30;">
+						List of Jobs					
+					</div>
+			
+					<div id = "divListProducts" style="padding:20px"></div>
+
+					<div style="text-align: center;">
+						<div id="divnextprev"> </div>
+					</div>
+
+				</div>
+			</div> 	
+
+			<div class="item-wapper">
+			</div>
+		</div>
+		
+	</div>
+
+
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="listproducts.js" type="text/javascript"></script>
+
+</html>

@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>Job applied</title>
+		  <link rel="stylesheet" href="commonstyle.css">
+		  <link rel="stylesheet" href="styles.css">
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		  <style>
+			input[type=text] {
+				width: 130px;
+				box-sizing: border-box;
+				border: 2px solid #ccc;
+				border-radius: 4px;
+				font-size: 12px;
+				background-color: #black ;
+				/*background-image: url('searchicon.jpg');*/
+				/*background-position: 10px 10px; */
+				background-repeat: no-repeat;
+				padding: 2px 20px 2px 2px;
+				transition: width 0.4s ease-in-out;
+			}
+
+			input[type=text]:focus {
+				width: 100%;
+			}
+		  </style>
+	</head>
+	<body onload="getlocalwishlist()">
+		<div class="nav-wapper">
+				
+			<div class="left-side">  
+				<div class="brand">
+					<a href="/listproducts">LineupX</a>
+				</div>
+			</div>
+
+			<div class="right-side">
+				<div class="nav-link-wapper">
+					<a href="/wishlist">Applied Jobs</a>
+				</div>
+				<div class="nav-link-wapper">
+					<a href="/page11" id="aAddProduct">Add Job</a>
+				</div>
+				
+				<div class="nav-link-wapper active-nav-link">
+					<a href="/register" id="aRegister">Register</a>
+				</div>
+				<div class="nav-link-wapper">
+					<a href="/login" id="aLogin">Login</a>
+				</div>
+				<div class="nav-link-wapper">
+					<a href="#" id="aLogout" onclick="userLogout()">Logout</a>
+				</div>
+				<div class="nav-link-wapper">
+					<a id="txtWelcome"></a>
+				</div>
+				<div class="nav-link-wapper">
+					<a id="txtWelcome"></a>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--_______________________________________________________________________________________________________-->
+
+		<div class="img-background1" style="background-image:url(678.jpg);height:500px">
+			<div style="color: #black;padding: 10;padding-left: 100;">
+				<div id="divuser">
+				<p id="puser"></p>
+				</div>
+				<div style="padding-left: 200;">
+					<h2> <b>Applied Jobs<b><h2>
+				</div>
+
+				<div id = "divListProducts" style="padding:15px">
+				</div>
+
+				<div style="padding-left: 200;">
+					<div id="divnextprev"> </div>
+				</div>
+
+			
+		</div>
+	  </div>
+	  
+	</body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="wishlist.js" type="text/javascript"></script>
+
+</html>

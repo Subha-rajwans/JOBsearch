@@ -1,0 +1,27 @@
+{
+    "name": "final-project-shopping-portal",
+    "version": "1.0.0",
+    "main": "main.js",
+    "dependencies": {
+        "client-sessions": "^0.8.0",
+        "ejs": "^2.7.1",
+        "express": "^4.17.1",
+        "mongoose": "^5.9.12",
+        "nodemon": "^2.0.3",
+        "paypal-rest-sdk": "^1.8.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository":
+        
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        
+    },
+   
+    "description": ""
+}
